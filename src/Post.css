@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalamdisplay=swap');
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+p {
+    position: absolute;
+    width: 488.51px;
+    height: 233.59px;
+    left: 500px;
+    top: 300px;
+    font-family: 'Kalam';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+
+.container button {
+    position: relative;
+    font-family: 'Kalam';
+    width: 140px;
+    height: 38px;
+    left: 260px;
+    margin-top: 150px;
+    color: white;
+    background: #7175C8;
+}
+
+img {
+    position: absolute;
+    left: 800.78px;
+    top: 170px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 5px solid black;
+}
+
+  
+  

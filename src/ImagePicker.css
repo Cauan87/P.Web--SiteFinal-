@@ -1,0 +1,32 @@
+.image-picker-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.image-wrapper {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(161, 158, 158);
+  background-image: url('assets/imagePicker_bg1.png') ;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 5px solid black;
+}
+
+.ellipse-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+input {
+    color: white;
+}
