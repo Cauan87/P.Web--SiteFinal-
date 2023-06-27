@@ -3,34 +3,43 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+
 .postBox {
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  background-color: rgba(90, 129, 148, 0.247);
+  border-radius: 50px;
+  margin-top: 50px;
 }
 
 .postBoxUp {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: visible;
   height: 100%;
   width: 1000px;
-  margin-bottom: 10px;
   padding: 20px;
 }
 
 .postBox p {
-  height: 20px;
+  height: 40px;
   min-width: 700px;
   max-width: 700px;
   font-size: 15px;
-  margin-right: 10px;
+  margin-right: 10px; 
 }
 
 .postBox img {
-  height: 160px;
-  width: 200px;
+  border-radius: 50%;
+  height: 200px;
+  max-width: 200px;
+  margin-top: 10px;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
 
 .postBox button {
@@ -38,4 +47,9 @@ body {
   margin-left: 20px;
   height: 30px;
   margin-top: 20px;
+}
+
+#overflow_p {
+  overflow-x: hidden;
+  overflow-y: auto;
 }

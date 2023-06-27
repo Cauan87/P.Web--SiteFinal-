@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import Header from "./Header";
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, addDoc  } from "firebase/firestore";
-import { getStorage, ref, uploadBytes } from "firebase/storage";
+import { getFirestore, collection, addDoc, updateDoc  } from "firebase/firestore";
+import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import "/src/styles/AddPost.css";
 
 const firebaseConfig = {
@@ -37,6 +37,8 @@ function AddPost() {
         // Fazer upload da imagem para o storage do Firebase
         const imageRef = ref(storage, `images/${docRef.id}`);
         await uploadBytes(imageRef, selectedImage);
+        const imageUrl = await getDownloadURL(imageRef);
+        await updateDoc(docRef, { imageUrl });
       }
   
       // Limpar os campos após salvar
@@ -66,6 +68,7 @@ function AddPost() {
                 rows="10"
                 value={postContent}
                 onChange={(event) => setPostContent(event.target.value)}
+                required
               ></textarea>
               <div className="pickImage">
                 {previewImage && (
@@ -79,6 +82,7 @@ function AddPost() {
                   type="file"
                   accept="image/*"
                   onChange={handleImageChange}
+                  required
                 />
               </div>
             </div>
@@ -90,5 +94,7 @@ function AddPost() {
       </div>
     );
   }
+
+  export { app, db, storage };
   
   export default AddPost;

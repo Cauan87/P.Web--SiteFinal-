@@ -7,12 +7,10 @@
 }
 
 body {
-  padding-top: 80px;
   background: url('https://i.pinimg.com/originals/09/31/56/0931565a0d746475587c354eda30be25.jpg');
   background-size: cover;
   height: 100vh;
   width: 100vw;
-  margin: 0;
   overflow-x: hidden;
   display: flex;
   align-items: center;
@@ -49,10 +47,12 @@ body {
   border-radius: 50px;
   background: linear-gradient(90.27deg, rgba(44, 34, 155, 0.884) 0.24%, rgba(34, 28, 96, 0.81) 0.25%, rgba(42, 35, 123, 0.82) 32.79%, rgba(43, 31, 179, 0.9) 55.58%, #251C88 75.53%);
 }
+
 #createPost:hover {
-    cursor: pointer;
-    border-color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  border-color: rgba(255, 255, 255, 1);
 }
+
 #createPost span {
   padding: 5px;
 }
