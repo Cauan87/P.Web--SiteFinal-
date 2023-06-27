@@ -3,7 +3,7 @@
 header {
     position: fixed;
     display: flex;
-    font-family: Kalam;
+    font-family: 'Kalam';
     justify-content: flex-end;
     align-items: center;
     padding: 20px 50px;
@@ -15,7 +15,7 @@ header {
 }
 
 nav {
-    padding-right: 50px;
+    margin-right: 20px;
 }
 
 .logo {
@@ -29,21 +29,37 @@ header li {
     list-style: none;
     display: inline-block;
     padding: 0 20px;
-}
-
-header a {
     text-decoration: none;
     color: white;
     transition: all 0.3s ease 0s;
 }
 
-header a:hover {
+
+header li:hover {
     text-decoration: underline; 
-    color: #3f3080;
+    color: rgb(149, 134, 218);
     cursor: pointer;
 }
 
 header button {
+    font-family: 'Kalam';
+    height: 60px;
+    width: 160px;
+    font-size: 16px;
+    border: 2px solid;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
     color: white;
     background: #0E0E0E;
+    transition: border 0.5s;
+}
+
+header button:hover {
+    cursor: pointer;
+    border-color: rgba(255, 255, 255, 1);
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
 }

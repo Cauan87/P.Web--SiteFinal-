@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formPost {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  position: relative;
+  width: 1000px;
+  height: 600px;
+  background: rgba(57, 20, 49, 0.61);
+  border-radius: 50px;
+  margin: 0 auto;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.formPost textarea {
+  resize: none;
+  box-sizing: border-box;
+  min-width: 500px;
+  min-height: 300px;
+  align-self: flex-start;
+  margin-bottom: 20px;
+  background-color: transparent;
+  color: white;
+  font-family: 'Kalam';
+  font-size: 17px;
+  border: none;
+}
+
+.pickImage {
+  align-self: flex-start;
+  margin-left: 80px;
+  width: 250px;
+  height: 260px;
+}
+
+#sendPost {
+  width: 230px;
+  height: 60px;
+  border-radius: 20px;
+  opacity: 70%;
+}
+
+#formUp {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pickImage img {
+  border-radius: 50%;
+  height: 200px;
+  max-width: 200px;
+  margin-top: 10px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}

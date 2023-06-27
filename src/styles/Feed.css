@@ -1,0 +1,8 @@
+body {
+  overflow-y: visible;
+}
+
+.postItem {
+  justify-items: auto;
+  max-height: 150px;
+}
